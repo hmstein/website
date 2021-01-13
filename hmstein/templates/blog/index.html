@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text center mb-3">Blog Posts</h1>
+{%  if latest_blog_posts %}
+    {% for post in latest_blog_posts %}
+        <div class="card mb-3">
+            
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted"> {{ post.pub_date }}</h6>
+                <p class="card-text">{{ post.body }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No Blog Posts</p>
+{% endif %}
+{% endblock %}

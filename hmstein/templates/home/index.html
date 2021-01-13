@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="card text-center">
+        <div class="card-body">
+            <h1>Welcome</h1>
+            <p>This is my website. There's not much to it yet. Just getting the skeleton put together. Enjoy?</p>
+            <a class="btn btn-dark" href="{% url 'blog:index' %}">
+                Check the Blog
+            </a>
+        </div>
+    </div>
+{% endblock %}

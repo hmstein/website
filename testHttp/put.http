@@ -1,0 +1,46 @@
+PUT http://localhost:8000/api/recipes/5/
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Peanut Butter and Jelly Sandwich",
+    "description": "Classic and quick lunch",
+    "ingredients": [
+      {
+        "id": 14,
+        "name": "Bread",
+        "quantity": 2.0,
+        "unit_type": "slices"
+      },
+      {
+        "id": 15,
+        "name": "Jelly",
+        "quantity": 2.0,
+        "unit_type": "Tbsp"
+      },
+      {
+        "id": 16,
+        "name": "Peanut Butter",
+        "quantity": 2.0,
+        "unit_type": "Tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "id": 24,
+        "step_num": 1,
+        "text": "Spread Peanut Butter on 1 slice of Bread and spread the Jelly on the other slice of Bread"
+      },
+      {
+        "id": 25,
+        "step_num": 2,
+        "text": "Place the slices of Bread upon each other with the spreads on top of one another to form a sandwich"
+      },
+      {
+        "step_num": 3,
+        "text": "Serve"
+      }
+    ],
+    "notes": "Easy to prepare, kills people with allergies",
+    "created_dttm": "2021-03-14T13:41:21.204940-05:00"
+  }

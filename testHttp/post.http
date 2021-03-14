@@ -1,0 +1,15 @@
+POST http://localhost:8000/api/recipes/
+Content-Type: application/json
+
+{
+    "name":"Glass of Water",
+    "description":"A glass of water you can drink",
+    "ingredients":[
+        {"name":"Water", "quantity": 8, "unit_type": "oz"}
+    ],
+    "steps":[
+        {"step_num": 1, "text": "Chill the water"},
+        {"step_num": 2, "text": "Pour the water into a cup and serve"}
+    ],
+    "notes":"Easy to prepare, essential to living"
+}
